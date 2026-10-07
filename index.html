@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventura Interativa</title>
+    <title>Aventura Interativa Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>A Jornada do Cavaleiro</h1>
+        <h1>A Lenda do Reino Perdido</h1>
         
-        <!-- Área onde o texto do algoritmo/história será exibido -->
-        <div id="story-text" class="story-box">
-            Carregando aventura...
+        <!-- Painel de Status do Jogador -->
+        <div class="status-bar">
+            <span>❤️ Vida: <strong id="health-val">100</strong></span>
+            <span>🎒 Inventário: <strong id="inventory-val">Vazio</strong></span>
         </div>
 
-        <!-- Área onde os botões de escolha serão gerados dinamicamente -->
+        <!-- Imagem Dinâmica da Cena -->
+        <div class="image-box">
+            <img id="scene-image" src="" alt="Cena do Jogo">
+        </div>
+
+        <!-- Texto da História -->
+        <div id="story-text" class="story-box">
+            Carregando jogo...
+        </div>
+
+        <!-- Botões de Escolha -->
         <div id="choices-container" class="choices-box"></div>
     </div>
 
